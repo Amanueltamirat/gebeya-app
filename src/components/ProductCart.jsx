@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react' 
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../stores/cart';
+import { addToCart } from '../stores/cart.js';
 
 const ProductCart = (props) => {
     const carts = useSelector(store => store.cart);

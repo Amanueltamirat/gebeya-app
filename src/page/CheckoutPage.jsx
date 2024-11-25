@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { clearCart } from '../stores/cart';
+import { clearCart } from '../stores/cart.js';
 
 function CheckoutPage() {
 

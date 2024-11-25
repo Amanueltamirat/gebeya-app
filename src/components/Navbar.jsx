@@ -5,7 +5,7 @@ import * as AiIcons from 'react-icons/ai'
 
 import { useSelector } from 'react-redux';
 import  { Link }  from 'react-router-dom'
-import { SidebarData } from './SidebarData';
+import { SidebarData } from './SidebarData.jsx';
 
 function Navbar() {
 

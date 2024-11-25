@@ -1,5 +1,5 @@
-import ProductCart from "../components/ProductCart"
-import { products } from "../products"
+import ProductCart from "../components/ProductCart.jsx"
+import { products } from "../products.js"
 function HomePage() {
   return (
     <div className="mb-20 home">

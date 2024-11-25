@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Navbar from './components/Navbar'
-import HomePage from './page/HomePage'
-import Footer from './components/Footer'
-import ProductDetail from './page/ProductDetail'
-import CartTab from './components/CartTab'
-import CheckoutPage from './page/CheckoutPage'
-import PurchaseSuccessPage from './page/PurchaseSuccess'
+import Navbar from './components/Navbar.jsx'
+import HomePage from './page/HomePage.jsx'
+import Footer from './components/Footer.jsx'
+import ProductDetail from './page/ProductDetail.jsx'
+import CartTab from './components/CartTab.jsx'
+import CheckoutPage from './page/CheckoutPage.jsx'
+import PurchaseSuccessPage from './page/PurchaseSuccess.jsx'
 
 function App() {
 

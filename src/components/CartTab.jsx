@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react' 
 import { useSelector, useDispatch } from 'react-redux' 
-import CartItem from './cartItem';
+import CartItem from './cartItem.jsx';
 import { Link } from 'react-router-dom';
 
 
