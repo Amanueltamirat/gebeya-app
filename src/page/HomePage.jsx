@@ -4,18 +4,18 @@ function HomePage() {
   return (
     <div className="mb-20 home">
     <div className='upper flex flex-col bg-purple-700 text-white items-center justify-center pb-10 gap-10 '>
-        <div className='div lg:flex  lg:items-center justify-center gap-10 mt-20 mx-10'>
-            <h1 className='sm:text-5xl lg:text-9xl font-bold'>Gebeya</h1>
+        <div className='div flex  items-center justify-center gap-10 mt-20 mx-10'>
+            <h1 className='f-h text-9xl font-bold'>Gebeya</h1>
             <img className='w-64 h-64 rounded-full grid' src="/img/person.jpg" alt="person" />
-           <p className='max-w-md font-poppins text-xl'> Discover a world of convenience with our user-friendly platform,
+           <p className='discover font-poppins text-xl'> Discover a world of convenience with our user-friendly platform,
              curaated collections, and exceptional customer service
             </p>
         </div>
-        <div className='flex gap-20 items-center justify-center ml-20'>
+        <div className='lower flex gap-20 items-center justify-center ml-20'>
             <img className='hidden lg:block rounded-full w-52 h-52' src="/img/shoee.jpeg" alt="shoee" />
-            <button className='bg-amber-500 p-1 w-80 h-16 rounded-lg hover:bg-amber-600'>Explore Now</button>
+            <button className= 'explore bg-amber-500 p-1 w-80 h-16 rounded-lg hover:bg-amber-600'>Explore Now</button>
             <div className='flex flex-col items-center'>
-                <h1 className='shop sm:text-5xl lg:text-9xl font-bold'>SHOP</h1>
+                <h1 className=' shop text-9xl font-bold'>SHOP</h1>
                 <img className='hidden lg:block rounded-full w-48 h-48' src="/img/shirt.jpeg" alt="shirt" />
             </div>
         </div>
@@ -24,7 +24,7 @@ function HomePage() {
         <div>
             <div className='flex justify-between mb-10' >
                 <h1 className='font-sans font-bold text-3xl'>Latest Collections</h1>
-                <div className='flex gap-2'>  
+                <div className='forward flex gap-2'>  
                     <div className='bg-amber-500 rounded-l-2xl hover:bg-slate-200 cursor-pointer' >
                     <svg xmlns="http://www.w3.org/2000/svg" className='my-2 mx-3 ' width={10} viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
                     </div> 
@@ -34,7 +34,7 @@ function HomePage() {
                 </div>
             </div>
 
-            <div className='flex gap-5 font-poppins product'>
+            <div className='product-box flex gap-5 font-poppins product'>
                  {products.map((product, key) => 
                 <ProductCart key={key} data={product}/>
             )}
@@ -44,8 +44,8 @@ function HomePage() {
 
         </div>
     </div>
-    <div className='mt-20 m-10 flex flex-col'>
-        <div className='flex gap-10 my-10 category'>
+    <div className=' mt-20 m-10 flex flex-col'>
+        <div className='category-btns flex gap-10 my-10 category'>
             <button className='border-2 rounded-full text-black h-16 w-1/6 text-xl hover:bg-amber-500'>Men</button>
             <button className='border-2 rounded-full text-xl text-black h-16 w-1/6 hover:bg-amber-500'>Women</button>
             <button className='border-2 rounded-full text-xl text-black h-16 w-1/6 hover:bg-amber-500'>Kids</button>
@@ -53,8 +53,8 @@ function HomePage() {
             <button className='border-2 rounded-full text-xl text-black h-16 w-1/6 hover:bg-amber-500'>Sport</button>
             <button className='border-2 rounded-full text-xl text-black h-16 w-1/6 hover:bg-amber-500'>Jewelry</button>
         </div>
-        <div className='flex flex-col gap-10 '>
-            <div className='flex gap-5 item'>
+        <div className='big-list flex flex-col gap-10 '>
+            <div className='list flex gap-5 item'>
                 <div className='flex flex-col items-center w-48 h-52 border-2 rounded-xl '>
                     <img className='bg-gray-200 m-4 py-1 px-2 w-20 h-20 rounded-xl'  src="img/shoe.png" alt="shoe" />
                     <h3 className='text-xl font-semibold mb-2'>Shoes</h3>
@@ -91,7 +91,7 @@ function HomePage() {
                 </div>
 
             </div>
-            <div className='flex gap-5 item'>
+            <div className='list flex gap-5 item'>
                 <div className='flex flex-col items-center lg:w-48 h-52 border-2 rounded-xl '>
                     <img className='bg-gray-200 m-4 p-1 w-20 h-20 rounded-xl'  src="img/sunglasses.webp" alt="Sunglasses" />
                     <h3 className='text-xl font-semibold mb-2'>Sunglasses</h3>
@@ -152,7 +152,7 @@ function HomePage() {
         <div></div>
        </div>
     </div>
-    <div className='m-10'>
+    <div className='lower-part m-10'>
         <div className='flex justify-between mb-10' >
                 <h1 className='font-sans font-bold text-3xl'>Browse by category</h1>
                 <div className='hidden lg:flex gap-4'>  

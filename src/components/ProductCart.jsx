@@ -16,7 +16,7 @@ const ProductCart = (props) => {
     }
 
     return (
-    <div className='w-1/3 border-2 rounded-xl product-cart'>
+    <div className='product-cart w-1/3 border-2 rounded-xl product-cart'>
                     <div className='flex flex-col m-4 bg-gray-100 rounded-xl hover:scale-x-90'>
                         <div className='flex justify-between m-4'>
                             <img className='w-9 h-9 bg-white p-2 rounded-full cursor-pointer' src="/icons/gridicons_heart-outline.png" alt="heart" />
