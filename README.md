@@ -1,4 +1,4 @@
-# Gebeya Shopping Web App
+# Gebeya Web App
 
 A modern shopping web application built with React.js and Tailwind CSS. The app features a user-friendly interface across various devices  and essential shopping functionalities.
 
