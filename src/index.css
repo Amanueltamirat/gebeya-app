@@ -417,8 +417,9 @@
     justify-content: center;
    }
    .category-btns, .product-box,.lower-part .item {
-   overflow-x: auto;
+   overflow-x: auto;  
    }
+  
    .detail-page .details{
     /* width: 100%; */
       overflow: auto;
@@ -456,7 +457,17 @@
   padding: 8px;
   font-weight: 400;
 }
-
+::-webkit-scrollbar{
+  display: none;
+}
+.lists.last img{
+  min-width: 200px;
+  min-height: 250px;
+}
+.lists.next img{
+  min-height: 250px;
+}
+/* NAVBAR */
 .navbar {
   height: 80px;
   display: flex;

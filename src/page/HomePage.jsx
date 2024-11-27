@@ -165,26 +165,26 @@ function HomePage() {
                 </div>
             </div>
         <div className='item flex gap-5 mb-20'>
-             <div className='flex flex-col items-center w-1/4 h-52 rounded-xl mb-28'>
+             <div className='lists flex flex-col items-center w-1/4 h-52 rounded-xl mb-28'>
                     <img className='bg-gray-200 m-4 rounded-xl p-2 hover:translate-y-1'  src="img/casual_shirt.png" alt="casual-wear" />
                     <h3 className='text-xl font-semibold mb-2'>Casual wear</h3>
                     <p className='text-sm text-gray-500'>Over 20 categories in stock</p>
                 </div> 
 
-                <div className='flex flex-col items-center w-1/4 h-52 rounded-xl '>
-                    <img className='bg-gray-200 m-4 rounded-xl p-2'  src="img/vintage_dress.png" alt="vintage" />
+                <div className='lists flex flex-col items-center w-1/4 h-52 rounded-xl '>
+                    <img className='bg-gray-200 m-4 rounded-xl p-2 hover:translate-y-1'  src="img/vintage_dress.png" alt="vintage" />
                     <h3 className='text-xl font-semibold mb-2'>Vintage</h3>
                     <p className='text-sm text-gray-500'>Over 31 categories in stock</p>
                 </div> 
 
-                <div className='flex flex-col items-center w-1/4 h-52  rounded-xl '>
-                    <img className='bg-gray-200 m-4 p-2 rounded-xl h-50'  src="img/beauty_products-removebg.png" alt="Beauty products" />
+                <div className='lists next flex flex-col items-center w-1/4 h-52  rounded-xl '>
+                    <img className='bg-gray-200 m-4 p-2 rounded-xl h-50 hover:translate-y-1'  src="img/beauty_products-removebg.png" alt="Beauty products" />
                     <h3 className='text-xl font-semibold mb-2'>Beauty products</h3>
                     <p className='text-sm text-gray-500'>Over 24 categories in stock</p>
                 </div> 
 
-                <div className='flex flex-col items-center w-1/4 h-52  rounded-xl '>
-                    <img className='bg-gray-200 m-4 p-2  rounded-xl'  src="img/gym_wears.webp" alt="Gym wears" />
+                <div className='lists last flex flex-col items-center w-1/4 h-52  rounded-xl '>
+                    <img className='bg-gray-200 m-4 p-2  rounded-xl hover:translate-y-1'  src="img/gym_wears.webp" alt="Gym wears" />
                     <h3 className='text-xl font-semibold mb-2'>Gym wears</h3>
                     <p className='text-sm text-gray-500'>Over 24 categories in stock</p>
                 </div> 
