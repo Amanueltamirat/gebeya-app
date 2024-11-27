@@ -36,7 +36,7 @@ detail?.overview?.map((text)=>{
     console.log(text)
 })
   return (
-    <div className='bg-gray-100 pt-5 pb-5'>
+    <div className='bg-gray-100 pt-5 pb-5 detail-page'>
         <div className='hidden lg:flex items-center text-gray-600 m-10'>
             <p>Home</p>
              <svg xmlns="http://www.w3.org/2000/svg" className='my-2 mx-3' width={10}   viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
@@ -46,8 +46,8 @@ detail?.overview?.map((text)=>{
              <svg xmlns="http://www.w3.org/2000/svg" className='my-2 mx-3' width={10}   viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             <p>Sneakers</p>
         </div>
-        <div className='detail lg:flex-row sm:flex-col flex gap-10 m-10 '>
-            <div className='flex border-2 justify-evenly lg:w-2/3 detail sm:w-full  border-gray-300 p-5 gap-5 rounded-xl bg-white'>
+         <div className='upper-details flex gap-10 m-10 '>
+            <div className='element flex border-2 justify-evenly lg:w-2/3  border-gray-300 p-5 gap-5 rounded-xl bg-white'>
               <div className=''>
                 <img src={detail.image} alt="" className='w-52 bg-gray-100 p-2'/>
                 <div className='flex flex-col ml-1'>
@@ -62,7 +62,7 @@ detail?.overview?.map((text)=>{
               <div className='flex flex-col gap-5 max-w-md'>
                 <div className='flex justify-between' >
                     <div className='border-b-2'>
-                   <h1 className='text-2xl  font-light font-poppins'>{detail.name}</ h1>
+                   <h1 className='title text-2xl  font-light font-poppins'>{detail.name}</ h1>
                    <p className='text-sm mb-5'>Brand: <span className='font-bold'>{detail.type}</span></p>
                     </div>
                  <img src="/icons/gridicons_heart-outline.png" className='p-1 size-6 bg-amber-500 rounded-full' alt="heart" />
@@ -87,7 +87,7 @@ detail?.overview?.map((text)=>{
                    <div className='flex justify-between'>
                     <div className='flex gap-2'>
                         <p>Size:</p>
-                        <div className='flex gap-2'>
+                        <div className=' flex gap-2'>
                             <button className='border-2 px-3 py-1 rounded-md'>20</button>
                             <button className='border-2 px-3 py-1 rounded-md'>25</button>
                             <button className='border-2 px-3 py-1 rounded-md'>32</button>
@@ -96,11 +96,11 @@ detail?.overview?.map((text)=>{
                        </div>
                        <p className='hidden lg:block'>see all size guides</p>
                     </div>
-                    <div className='flex gap-2'>
-                         <button className='border-2 text-black px-5 py-2 rounded-md hover:bg-gray-200' onClick={handleAddToCart}>
-                        Add To Cart
-                    </button>
-                    <Link to='/checkout' className='bg-amber-500 hover:bg-amber-700 text-white px-5 py-2 rounded-md '>Buy now</Link>
+                    <div className='cart-btns flex gap-2'>
+                         <Link to='/cart' className='btn border-2 text-black px-5 py-2 rounded-md hover:bg-gray-200' onClick={handleAddToCart}>
+                           Add To Cart
+                         </Link>
+                    <Link to='/checkout' className='btn bg-amber-500 hover:bg-amber-700 text-white px-5 py-2 rounded-md '>Buy now</Link>
                     </div>
                     <p className='text-green-800 text-sm'>Pickup & Pay on collection available</p>
                </div>
@@ -151,9 +151,7 @@ detail?.overview?.map((text)=>{
           
         </div>
         </div>
-
-
-       <div className='bg-white m-10 border-2 border-gray-30 rounded-xl pb-10'>
+       <div className='similar-items bg-white m-10 border-2 border-gray-30 rounded-xl pb-10'>
         <div className='p-5 border-b-2'>
             <div>
                 <button className='border-2 px-7 py-1 rounded-full hover:bg-amber-500 hover:text-white'>Overview</button>
@@ -168,8 +166,8 @@ detail?.overview?.map((text)=>{
         </div>
         <div className='m-10'>
             <h3 className=' pb-5 text-xl font-semibold'>Similar items you may like</h3>
-            <div className='detail flex gap-5'>
-                <div className='full w-1/3 border-2 rounded-xl'>
+            <div className='details flex gap-5'>
+                <div className='w-1/3 border-2 rounded-xl'>
                     <div className='flex flex-col m-4 bg-gray-100 rounded-xl'>
                         <div className='flex justify-between m-4'>
                             <img className='w-9 h-9 bg-white p-2 rounded-full cursor-pointer' src="/icons/gridicons_heart-outline.png" alt="heart" />
@@ -190,7 +188,7 @@ detail?.overview?.map((text)=>{
                         <button onClick={handleAddToCart} className='hover:bg-amber-600 bg-amber-500 p-4 text-white font-semibold rounded-2xl'>Add to cart</button>
                     </div>
                 </div>
-                <div className='full w-1/3 border-2 rounded-xl'>
+                <div className=' w-1/3 border-2 rounded-xl'>
                     <div className='flex flex-col m-4 bg-gray-100 rounded-xl'>
                         <div className='flex justify-between m-4'>
                             <img className='w-9 h-9 bg-white p-2 rounded-full cursor-pointer' src="/icons/gridicons_heart-outline.png" alt="heart" />

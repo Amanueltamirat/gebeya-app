@@ -17,13 +17,13 @@ const ProductCart = (props) => {
 
     return (
     <div className='product-cart w-1/3 border-2 rounded-xl product-cart'>
-                    <div className='flex flex-col m-4 bg-gray-100 rounded-xl hover:scale-x-90'>
+                    <div className='flex flex-col m-4 bg-gray-100 rounded-xl '>
                         <div className='flex justify-between m-4'>
                             <img className='w-9 h-9 bg-white p-2 rounded-full cursor-pointer' src="/icons/gridicons_heart-outline.png" alt="heart" />
                             <button className='bg-white px-2 py-2.5 rounded-full hover:bg-white'>In Stock</button>
                         </div>
-                         <Link to={slug} className='flex items-center justify-center -mt-16'>
-                        <img className='w-56 h-60' src={image} alt={slug} />
+                         <Link className='flex items-center justify-center -mt-16 transition-all duration-700'>
+                        <img className='w-56 h-60 hover:scale-x-90' src={image} alt={slug} />
                         </Link>
                     </div>
                     <div className='flex justify-between m-4'>
@@ -34,7 +34,7 @@ const ProductCart = (props) => {
                     <p className='mx-4 text-gray-500 text-sm'>{type}</p>
                     <div className='flex items-center justify-between m-4'>
                         <p className='font-bold text-xl'>{price}</p>
-                        <button onClick={handleAddToCart} className='hover:bg-amber-600 bg-amber-500 p-4 text-white font-semibold rounded-2xl'>Add to cart</button>
+                        <Link to={slug} onClick={handleAddToCart} className='hover:bg-amber-600 bg-amber-500 p-4 text-white font-semibold rounded-2xl'>Add to cart</Link>
                     </div>
                 </div>
   )
